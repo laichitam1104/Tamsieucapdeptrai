@@ -1,0 +1,373 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0 ;
+	padding: 0 ;
+	
+}
+h1, h2, h3, h4, h5{
+	font-family: 'Inconsolata', monospace;
+}
+body{
+font-family: 'Staatliches', cursive;
+	color: whitesmoke;
+}
+#Wrapper{
+	width: 100%;
+	background: #1F1F1F;
+}
+.Container{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.Header{
+	width: 100%;
+	height: 100px;
+	/*background: Red;*/
+}
+.Header-main{
+	width: 100%;
+	height: 100px;
+	/*background: Yellow;*/
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
+.Logo{
+	width: 70%;
+	/*background: Green;*/
+}
+.Logo a{
+	font-size: 50px;
+	font-weight: 100;
+	text-decoration: none;
+	color: antiquewhite;
+}
+.Menu{
+	width: 40%;
+/* 	background: Pink;*/
+}
+.Menu ul{
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+.Menu ul li{
+	
+}
+.Menu ul li a{
+	font-size: 22px;
+	text-decoration: none;
+	color: whitesmoke;
+}
+.Menu ul li a:Hover{
+	color:#474343;
+}	
+.Main{
+	width: 100%;
+}
+.Title{
+	width: 100%;
+	height: 400px; 
+	padding-top: 50px;
+	box-sizing: content-box;
+}
+.model{
+	height:650px;
+	position:absolute;
+	bottom: 60px;
+	left:82%;
+	transform: translateX(-75%);
+	padding-top: 40px;
+}
+.Hero{
+	width: 100%;
+	height: 100vh;
+	background-image: url("../img/42337.jpg");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+.Banner p{
+	font-size: 200px;
+	font-family: Staatliches;
+	color:#FC05E3;
+	font-weight: 900;
+}
+.money img{
+	width: 1000px;
+	animation: money 7s linear infinite;
+}
+.money{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	bottom: -70;	
+}
+@keyframes money{
+	0%{
+		transform: translateY(0);
+		opacity: 0;
+	}
+	50%{
+		
+		opacity: 1;
+	}
+	70%{
+		
+		opacity: 1;
+	} 
+	100%{
+		transform: translateY(-80vh);
+		opacity: 0;
+	}
+}
+.money img:nth-child(1){
+	animation-delay: 1s;
+}
+.money img:nth-child(2){
+	animation-delay: 2s;
+}.money img:nth-child(3){
+	animation-delay: 7s;
+}.money img:nth-child(4){
+	animation-delay: 2s;
+}.money img:nth-child(5){
+	animation-delay: 4s;
+}.money img:nth-child(6){
+	animation-delay: 6s;
+}
+.Banner{
+	width: 100%;
+	height: 1000px;
+	position: relative;
+}
+.banner p{
+	font-family:Staatliches;
+	padding-top: 80px;
+	animation: changecolor ease 1s infinite;
+}
+.about-container{
+	width:100%;
+	height:400px;
+	background:white;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+	display: flex;
+	margin: 10px auto 0;
+	position: relative;
+	justify-content:center;
+	align-items: center;
+}
+.about-container img{
+	
+	height:485px;
+}
+.about-text{
+	width:500px;
+	padding-left: 20px;
+} 
+.about-text p:nth-child(1){
+	color: black;
+	font-family: Staatliches;
+	font-weight:bold;
+	font-size:23px;
+	line-height:0px;
+}
+.about-text p:nth-child(2){
+	color: black;
+	font-size:13px;
+	font-family: Staatliches;
+	font-weight:bold;
+	line-height:50px;
+	text-align: justify;	
+}
+.about-text p{
+	color:#7e7d7d;
+	font-family:Staatliches;
+	font-size:15px;
+	padding-bottom: 15px;
+}
+.about-text button{
+	width:120px;
+	height: 40px;
+	color:#ffffff;
+	outline:none;
+	border:none;
+	font-family: Staatliches;
+	background-color:#262525;
+}
+.Hello-container{
+	width: 100%;
+	height: 10px;
+	margin-top: 25px;
+}
+.Hello h1{
+	text-align: center;
+	font-size: 50px;
+}
+.MyProject-container{
+	width: 100%;
+	min-height: 500px;
+	margin: 70px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap:nowrap;
+}
+.MyProject-container .box{
+	position: relative;
+	width: 500px;
+	height: 650px;
+	background: #ff0;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+.boximg img{
+	width: 500px;
+	height: 650px;
+}
+.boximg img{
+	width: 500px;
+	height: 650px;
+}
+.boximg img{
+	width: 500px;
+	height: 650px;
+}
+.MyProject-container .box .imgbox{
+	position: relative;
+	overflow: hidden;
+}
+.MyProject-container .box .boximg img{
+	max-width: 100%;
+	transition: transform 2s;
+}
+.MyProject-container .box:hover .boximg img{
+	transform: scale(1.2);
+}
+.MyProject-container .box .details{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	background: #464445;
+	transform: scale(0);
+	transition: transform .5s;
+}
+
+.contact-me{
+	width: 100%;
+	height:280px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.contact-me p{
+	font-size: 30px;
+	font-family: Inconsolata;
+	font-weight:300px;
+	/*border-bottom:2px solid #ffffff;*/
+	text-align: center;
+	margin: 0px 0px 20px 0px;
+}
+.contact-me button{
+	width:200px;
+	height:40px;
+	background-color: #FFFFFF;
+	border:none;
+	outline:none;
+	font-size:20px;
+	font-weight:bold;
+}
+
+footer p{
+	font-family: Inconsolata;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	font-weight:bold;
+	color:#191919;
+	line-height:10px;
+}
+footer p:nth-child(2){
+	font-size: 16px;
+	color:#7e7d7d;
+	width:600px;
+	text-align: center;
+}
+footer{
+	height:300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.social-icons a{
+	width:40px;
+	height:40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color:#e6e3e3;
+	margin:20px 10px;
+	border-radius:50%;
+}
+.social-icons{
+	display: flex;
+	
+}
+.social-icons i,.social i{
+	color:#000000;
+}
+.social-icons a:hover{
+	background-color:#000000;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+	transition:all ease 0.5s;
+}
+.social-icons a:hover i,
+.social a:hover i{
+	color:#FFFFFF;
+	transition:all ease 0.5s;
+}
+ 
+.copyright{
+	color:#565555;
+	font-size: 12px;
+	position: absolute;
+	left:50%;
+	bottom:10px;
+	transform: translateX(-50%);
+}
+.social{
+	position: fixed;
+	top:50%;
+	right:0px;
+	transform:translateY(-50%);
+}
+.social a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:50px;
+	height:50px;
+	margin:0px;
+	padding: 0px;
+	line-height:0px;
+	background-color:#FFFFFF;
+	border:1px solid #CBCBCB;
+	box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+}
+.social a:hover{
+	background-color:#000000;
+	transition:all ease 0.5s;
+}
+.social i{
+	font-size:20px;
+	color:#2B2B2B;
+}
